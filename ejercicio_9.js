@@ -4,10 +4,10 @@ function adivinar(){
         array.push(Math.floor(Math.random() * 10) + 1)
     }
     let answer = prompt("Tu numero", 5);
-    if(array.includes(answer)){
-        console.log("Ganaste")
+    if(array.includes(Number(answer))){
+        return "Ganaste";
     }
-    console.log(array);
+    return array;
 }
 
 adivinar();
